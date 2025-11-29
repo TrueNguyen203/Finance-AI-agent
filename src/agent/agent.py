@@ -45,7 +45,7 @@ def setup_agent():
             Không lặp lại hay lịch sử hội thoại.
             Hãy luôn trả lời bằng Tiếng Việt.
             Giải thích thật ngắn gọn kèm theo dẫn chứng, sử dụng ma trận thông tin nếu cần.
-            Nếu ma trận quá dài hãy chỉ đưa ra phần đầu và phần cuối của ma trận.
+            Nếu ma trận quá dài (dài hơn 30x dòng) hãy chỉ đưa ra phần đầu và phần cuối của ma trận.
             Nếu không có thông tin, hãy trả lời 'Không tìm thấy thông tin'.
         """,
     )

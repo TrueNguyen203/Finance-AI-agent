@@ -15,10 +15,11 @@ questions = [
     "Tính cho tôi SMA9 của mã VIC trong 2 tuần với timeframe 1d",
     "Tính cho tôi SMA9 và SMA20 của mã VIC trong 2 tháng với timeframe 1d",
     "Tính cho tôi RSI14 của TCB trong 1 tuần với timeframe 1m",
-    "Tính SMA9 và SMA20 của mã TCB từ đầu tháng 11 đến nay theo timeframe 1m"
+    "Tính SMA9 và SMA20 của mã TCB từ đầu tháng 11 đến nay theo timeframe 1m",
+    "Tính MACD của mã VCB trong tháng 10 với timeframe 1d",
 ]
 
-output_file = "test_results.txt"
+output_file = "./auto_question_test_results.txt"
 
 with open(output_file, "w", encoding="utf-8") as f:
     for q in questions:
