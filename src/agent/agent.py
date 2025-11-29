@@ -1,6 +1,8 @@
+import os
 from langchain.agents import create_agent
 from langchain_ollama import ChatOllama
-from tools.search_tools import (
+
+from ..tools.search_tools import (
     search_company_overview,
     search_company_shareholders,
     search_company_officers,
@@ -8,12 +10,11 @@ from tools.search_tools import (
     search_company_historical_price,
 )
 
-from tools.math_tools import (
+from ..tools.math_tools import (
     calculating_simple_moving_average,
     calculating_relative_strength_index,
     calculating_moving_average_convergence_divergence
 )
-
 
 def setup_agent():
     # --- Listing tools ---

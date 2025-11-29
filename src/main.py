@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from .agent import setup_agent
-
+from .agent.agent import setup_agent
 
 # python -m uvicorn src.main:app --reload --host 0.0.0.0 --port 8000
 app = FastAPI()
