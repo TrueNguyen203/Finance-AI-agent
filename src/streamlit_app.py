@@ -1,6 +1,8 @@
 import streamlit as st
 import requests
 
+# streamlit run src/streamlit_app.py
+
 # -------------------------
 # Streamlit Config
 # -------------------------
