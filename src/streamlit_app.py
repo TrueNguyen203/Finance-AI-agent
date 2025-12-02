@@ -41,7 +41,7 @@ if st.button("🔍 Gửi", key="submit"):
                 response = requests.post(
                     API_URL,
                     json={"question": user_question},
-                    timeout=120
+                    timeout=1200
                 )
                 
                 st.write(f"✅ Status Code: {response.status_code}")

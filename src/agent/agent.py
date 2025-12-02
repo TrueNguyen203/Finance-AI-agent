@@ -31,9 +31,10 @@ def setup_agent():
 
     # --- Setup Agent ---
     model = ChatOllama(
-        model="gpt-oss:120b-cloud",
+        model="gpt-oss:120b-cloud", #gpt-oss:120b
         temperature=0,
         max_tokens=512,
+        base_url="http://ollama:11434" #None if run on local
     )
 
     agent = create_agent(
