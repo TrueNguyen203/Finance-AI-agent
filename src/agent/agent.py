@@ -34,7 +34,7 @@ def setup_agent():
         model="gpt-oss:120b-cloud", #gpt-oss:120b
         temperature=0,
         max_tokens=512,
-        base_url="http://ollama:11434" #None if run on local
+        # base_url="http://ollama:11434" # Sử dụng khi chạy trong Docker
     )
 
     agent = create_agent(
