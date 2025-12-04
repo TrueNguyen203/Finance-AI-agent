@@ -17,6 +17,7 @@ questions = [
     "Tính cho tôi RSI14 của TCB trong 1 tuần với timeframe 1m",
     "Tính SMA9 và SMA20 của mã TCB từ đầu tháng 11 đến nay theo timeframe 1m",
     "Tính MACD của mã VCB trong tháng 10 với timeframe 1d",
+    "Bollinger Bands là gì?"
 ]
 
 output_file = "./auto_question_test_results.txt"

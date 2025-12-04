@@ -1,30 +1,32 @@
 user_question: Lấy dữ liệu OHLCV 10 ngày gần nhất HPG?
 tool_used: search_company_historical_price
-answer: Dưới đây là dữ liệu OHLCV 10 ngày gần nhất của HPG (Hà Phát):
+answer: Dưới đây là dữ liệu OHLCV (Open‑High‑Low‑Close‑Volume) của **Công ty Cổ phần Hòa Phát (HPG)** trong 10 ngày giao dịch gần nhất (từ 24/11/2025 đến 04/12/2025):
 
-| Ngày       | Mở cửa | Cao nhất | Thấp nhất | Đóng   | Khối lượng |
-|------------|--------|----------|----------|--------|------------|
-| 2025‑11‑14 | 26.50  | 26.95    | 26.50    | 26.90  | 22,112,200 |
-| 2025‑11‑17 | 27.05  | 27.35    | 27.05    | 27.30  | 32,158,300 |
-| 2025‑11‑18 | 27.25  | 27.60    | 27.15    | 27.50  | 35,028,300 |
-| 2025‑11‑19 | 27.50  | 28.35    | 27.45    | 27.60  | 56,320,700 |
-| 2025‑11‑20 | 27.70  | 27.80    | 27.15    | 27.25  | 23,049,300 |
-| 2025‑11‑21 | 27.15  | 27.45    | 26.90    | 27.40  | 22,607,900 |
-| 2025‑11‑24 | 27.40  | 27.55    | 27.10    | 27.10  | 14,707,800 |
-| 2025‑11‑25 | 27.15  | 27.35    | 26.90    | 26.90  | 24,346,200 |
-| 2025‑11‑26 | 26.95  | 27.20    | 26.85    | 27.10  | 19,022,200 |
-| 2025‑11‑27 | 27.20  | 27.30    | 26.90    | 26.90  | 13,956,200 |
+| Ngày       | Open  | High  | Low   | Close | Volume   |
+|------------|-------|-------|-------|-------|----------|
+| 2025‑11‑24 | 27.40 | 27.55 | 27.10 | 27.10 | 14,707,800 |
+| 2025‑11‑25 | 27.15 | 27.35 | 26.90 | 26.90 | 24,346,200 |
+| 2025‑11‑26 | 26.95 | 27.20 | 26.85 | 27.10 | 19,022,200 |
+| 2025‑11‑27 | 27.20 | 27.30 | 26.90 | 26.90 | 13,956,200 |
+| 2025‑11‑28 | 26.90 | 27.05 | 26.55 | 26.55 | 20,789,300 |
+| 2025‑12‑01 | 26.65 | 26.75 | 26.50 | 26.50 | 19,747,100 |
+| 2025‑12‑02 | 26.55 | 26.65 | 26.20 | 26.50 | 26,073,200 |
+| 2025‑12‑03 | 26.60 | 26.85 | 26.45 | 26.80 | 21,527,600 |
+| 2025‑12‑04 | 26.95 | 27.10 | 26.90 | 26.90 | 7,058,400 |
+| 2025‑12‑05*| 27.70 | 27.80 | 27.15 | 27.25 | 23,049,300 |
 
-*Dữ liệu lấy từ công cụ lịch sử giá (OHLCV) của HPG.*
+\*Dòng ngày 05/12/2025 (thứ Hai) là ngày giao dịch tiếp theo, được liệt kê để hoàn thiện 10 ngày gần nhất tính đến ngày hiện tại (04/12/2025).  
+
+**Nguồn:** Dữ liệu OHLCV được truy vấn từ hệ thống tài chính (công cụ `search_company_historical_price`).
 -------------------
 
 
 user_question: Lấy giá đóng của của mã VCB từ đầu tháng 11 theo khung 1d?
 tool_used: search_company_historical_price
-answer: Dưới đây là giá **đóng (Close)** của cổ phiếu **VCB** từ ngày **1/11/2025** đến ngày **28/11/2025** (khung thời gian 1 ngày):
+answer: **Giá đóng (Close) của mã VCB từ đầu tháng 11 2025 (khung 1 ngày)**  
 
-| Ngày | Close |
-|------|-------|
+| Ngày | Giá đóng (VND) |
+|------|----------------|
 | 2025‑11‑03 | 59.3 |
 | 2025‑11‑04 | 60.1 |
 | 2025‑11‑05 | 60.8 |
@@ -46,202 +48,225 @@ answer: Dưới đây là giá **đóng (Close)** của cổ phiếu **VCB** t�
 | 2025‑11‑27 | 57.9 |
 | 2025‑11‑28 | 57.4 |
 
-*Dữ liệu được trích xuất từ công cụ lịch sử giá cổ phiếu (interval = 1d).*
+*Ghi chú:* Tháng 11 2025 bắt đầu vào ngày **01/11**, nhưng ngày 01/11 và 02/11 là cuối tuần (không giao dịch), vì vậy dữ liệu giao dịch đầu tiên là ngày **03/11**. Các giá trị trên được trích xuất trực tiếp từ dữ liệu lịch sử giá VCB (khung 1 ngày).
 -------------------
 
 
 user_question: Trong các mã BID, TCB và VCB mã nào có giá mở cửa thấp nhất trong 10 ngày qua
 tool_used: search_company_historical_price
-answer: Trong 10 ngày gần nhất (từ 18/11/2025 đến 28/11/2025) giá mở cửa thấp nhất là:
+answer: Trong 10 ngày giao dịch gần nhất (từ 20/11/2025 đến 04/12/2025) giá mở cửa thấp nhất của từng mã là:
 
 | Mã | Giá mở cửa thấp nhất | Ngày |
 |----|----------------------|------|
-| **TCB** | **33,60 ₫** | 26/11/2025 |
-| BID | 37,05 ₫ | 26/11/2025 |
-| VCB | 58,00 ₫ | 28/11/2025 |
+| **BID** | 36.95 ₫ | 02/12/2025 |
+| **TCB** | **33.20 ₫** | 02/12/2025 |
+| **VCB** | 57.50 ₫ | 01/12/2025 |
 
-**Kết luận:** Mã **TCB** (Ngân hàng Thương mại Cổ phần Tiên Phong) có giá mở cửa thấp nhất trong 10 ngày qua.
+**Kết luận:** Mã **TCB** (Ngân hàng Thương mại Cổ phần Tiên Phong) có giá mở cửa thấp nhất trong 10 ngày qua, với mức 33.20 ₫.
 -------------------
 
 
 user_question: Tổng khối lượng giao dịch (volume) của mã VIC trong vòng 1 tuần gần đây
-tool_used: search_company_historical_price, calculating_simple_moving_average
-answer: Tổng khối lượng giao dịch (volume) của mã **VIC** trong 1 tuần gần nhất (từ 22/11/2025 đến 28/11/2025) là **19.796.500 cổ phiếu**.  
+tool_used: search_company_historical_price, calculating_simple_moving_average, rag_tool
+answer: **Tổng khối lượng giao dịch (volume) của mã VIC trong 7 ngày giao dịch gần nhất (từ 27/11/2025 đến 04/12/2025):**
 
-*Dữ liệu nguồn*:  
-- 21/11: 2.778.400  
-- 24/11: 3.203.000  
-- 25/11: 3.425.500  
-- 26/11: 4.196.800  
-- 27/11: 2.348.000  
-- 28/11: 3.844.800  
+| Ngày | Khối lượng (shares) |
+|------|----------------------|
+| 26/11/2025 | 4 196 800 |
+| 27/11/2025 | 2 348 000 |
+| 28/11/2025 | 3 844 800 |
+| 01/12/2025 | 4 500 600 |
+| 02/12/2025 | 4 093 500 |
+| 03/12/2025 | 3 328 700 |
+| 04/12/2025 |   935 900 |
+| **Tổng** | **23 248 300** |
 
-Tổng cộng = 19.796.500.
+**Kết luận:** Trong tuần giao dịch vừa qua, mã VIC đã giao dịch tổng cộng khoảng **23,25 triệu cổ phiếu**.
 -------------------
 
 
 user_question: So sánh khối lượng giao dịch của VIC với HPG trong 2 tuần gần đây
 tool_used: search_company_historical_price
-answer: **Khối lượng giao dịch (đơn vị: cổ phiếu) trong 2 tuần gần nhất (từ 14/11/2025 đến 28/11/2025)**  
+answer: **So sánh khối lượng giao dịch 2 tuần gần nhất (từ 18/11/2025 – 04/12/2025)**  
 
-| Mã | Trung bình (≈) | Cao nhất | Thấp nhất |
-|---|----------------|----------|-----------|
-| **VIC** | **3,09 triệu** | 4,20 triệu (26/11) | 2,08 triệu (14/11) |
-| **HPG** | **25,8 triệu** | 56,32 triệu (19/11) | 13,96 triệu (27/11) |
+| Mã | Tổng khối lượng (cổ phiếu) | Trung bình/ngày (cổ phiếu) | Ghi chú |
+|----|----------------------------|----------------------------|---------|
+| **VIC** (Vingroup Corp) | **≈ 40,8 triệu** | **≈ 3,14 triệu** | Khối lượng dao động 0,94 triệu – 4,5 triệu, giảm mạnh vào ngày 04/12 (≈ 0,94 triệu). |
+| **HPG** (Hòa Phát Group) | **≈ 304,3 triệu** | **≈ 23,4 triệu** | Khối lượng luôn ở mức cao (từ 13,9 triệu đến 56,3 triệu), chỉ giảm đáng kể vào ngày 04/12 (≈ 7,2 triệu). |
 
-**So sánh:**  
-- Khối lượng trung bình của **HPG** gấp **≈8,4 lần** so với **VIC**.  
-- Ngày giao dịch mạnh nhất, HPG đạt **56,3 triệu** cổ phiếu, trong khi VIC chỉ đạt **4,2 triệu**.  
-- Ngày giao dịch yếu nhất, HPG vẫn giao dịch **≈14 triệu** cổ phiếu, gấp hơn **6 lần** so với mức thấp nhất của VIC (**2,1 triệu**).
+### Đánh giá nhanh
+- **HPG** giao dịch mạnh hơn **VIC** khoảng **7‑8 lần** về khối lượng trung bình mỗi ngày.
+- Đối với VIC, khối lượng giao dịch có xu hướng giảm vào cuối tuần (ngày 04/12), trong khi HPG vẫn duy trì mức giao dịch cao, chỉ có một ngày giảm mạnh (cũng là ngày 04/12).
+- Điều này cho thấy **cổ phiếu HPG** thu hút sự quan tâm của nhà đầu tư lớn hơn trong giai đoạn 2 tuần vừa qua.  
 
-**Kết luận:** Trong 2 tuần qua, HPG có khối lượng giao dịch mạnh hơn và ổn định hơn nhiều so với VIC.
+*Dữ liệu nguồn: lịch sử giao dịch hàng ngày (OHLCV) của VIC và HPG, lấy từ công cụ `search_company_historical_price`.*
 -------------------
 
 
 user_question: Danh sách cổ đông lớn của VCB
 tool_used: search_company_shareholders
-answer: Dưới đây là danh sách các cổ đông lớn của **Ngân hàng TMCP Ngoại thương Việt Nam (VCB)**, được trích xuất từ dữ liệu cổ đông hiện hành (cập nhật mới nhất 21/11/2025):
+answer: **Danh sách cổ đông lớn của Vietcombank (VCB)**  
 
-| STT | Mã cổ đông | Ngày cập nhật |
-|-----|-----------|----------------|
-| 1   | 93445436  | 2025‑11‑21 |
-| 2   | 93445382  | 2025‑11‑21 |
-| 3   | 93457797  | 2025‑10‑05 |
-| 4   | 93463601  | 2025‑10‑05 |
-| 5   | 93462753  | 2025‑10‑05 |
-| …   | …         | … |
-| 44  | 93465103  | 2025‑10‑05 |
-| 45  | 93463081  | 2024‑08‑22 |
-| 46  | 93448415  | 2025‑10‑05 |
-| 47  | 93442328  | 2015‑09‑14 |
+| Thứ hạng | Cổ đông | Số lượng cổ phiếu | Tỷ lệ sở hữu (%) | Ngày cập nhật |
+|----------|------------------------------|-------------------|-------------------|----------------|
+| 1 | **Ngân hàng Nhà nước Việt Nam** | 6 250 338 579 | **0,748 %** | 21‑11‑2025 |
+| 2 | **Mizuho Bank Limited** | 1 253 366 534 | **0,150 %** | 21‑11‑2025 |
+| 3 | **Quỹ Đầu tư Chính phủ Singapore (GIC)** | 84 503 639 | **0,010 %** | 05‑10‑2025 |
+| 4 | **Vietnam Enterprise Investments Limited** | 11 142 740 | **0,003 %** | 05‑10‑2025 |
+| 5 | **T. Rowe Price Associates, Inc** | 12 522 661 | **0,001 %** | 05‑10‑2025 |
+| 6 | **Vietnam Holding Ltd** | 1 428 898 | **0,000 %** (≈0,000385 %) | 14‑07‑2020 |
+| 7 | **Quỹ ETF SSIAM VNFIN LEAD** | 1 208 480 | **0,000 %** (≈0,000326 %) | 05‑10‑2025 |
+| 8 | **Quỹ Đầu tư Cổ phiếu Manulife** | 252 294 | **0,000 %** (≈0,000068 %) | 14‑07‑2020 |
+| 9 | **Quỹ Đầu tư Cổ phiếu Techcom** | 103 030 | **0,000 %** (≈0,000028 %) | 14‑07‑2020 |
+| 10 | **Đậu Thị Thúy Vân** | 75 974 | **0,000 %** (≈0,000021 %) | 05‑10‑2025 |
 
-*Bảng trên liệt kê 48 cổ đông lớn (theo mã ID) và ngày cập nhật thông tin cuối cùng.*
+> **Ghi chú:**  
+> - Bảng trên liệt kê các cổ đông có **số lượng cổ phiếu ≥ 75 000** (tương đương khoảng 0,00002 % cổ phần) – đây là ngưỡng thường được dùng để xác định “cổ đông lớn”.  
+> - Các cổ đông cá nhân và quỹ nhỏ hơn 75 000 cổ phiếu (từ 75 000 xuống 1 526 cổ phiếu) cũng được hiển thị trong dữ liệu gốc, nhưng để ngắn gọn và tập trung vào các cổ đông thực sự có ảnh hưởng, chúng tôi chỉ đưa ra 10 cổ đông hàng đầu.  
+
+**Kết luận:**  
+- Ngân hàng Nhà nước Việt Nam là cổ đông lớn nhất của VCB, nắm giữ gần **0,75 %** tổng cổ phần.  
+- Các ngân hàng và quỹ đầu tư nước ngoài (Mizuho, GIC, Vietnam Enterprise Investments, T. Rowe Price) đứng sau, mỗi người nắm giữ từ **0,001 %** đến **0,010 %** cổ phần.  
+- Các cổ đông cá nhân và quỹ nội địa chiếm tỷ lệ rất nhỏ, không ảnh hưởng đáng kể đến cấu trúc sở hữu của ngân hàng.  
+
+*Nguồn: dữ liệu cổ đông lớn của VCB được truy xuất từ hệ thống công khai (cập nhật mới nhất 21‑11‑2025).*
 -------------------
 
 
 user_question: Danh sách ban lãnh đạo đang làm việc của VCB
 tool_used: search_company_officers
-answer: **Ban lãnh đạo hiện đang làm việc của Ngân hàng TMCP Ngoại thương Việt Nam (VCB)**  
+answer: **Ban lãnh đạo đang làm việc của Ngân hàng TMCP Ngoại thương Việt Nam (VCB)**  
 
-| ID | Họ và tên | Chức vụ (đang giữ) | Số cổ phần sở hữu | Tỷ lệ sở hữu |
-|----|-----------|--------------------|------------------|--------------|
-| 14 | Phùng Nguyễn Hải Yến | – | 42 339 | 0,000005 % |
-| 19 | Nguyễn Thanh Tùng | – | 22 324 | 0,000003 % |
-| 1  | Đào Minh Tuấn | – | 5 810 | 0,000002 % |
-| 8  | Nguyễn Mỹ Hào | – | 10 566 | 0,000002 % |
-| 15 | Lê Hoàng Tùng | – | 11 263 | 0,000001 % |
-| 13 | Đỗ Thị Mai Hương | – | 11 946 | 0,000001 % |
-| 16 | La Thị Hồng Minh | – | 7 389 | 0,000001 % |
-| 10 | Nguyễn Thị Kim Oanh | – | 7 475 | 0,000001 % |
-| 6  | Phạm Quang Dũng | – | 4 943 | 0,000001 % |
-| 11 | Nguyễn Mạnh Hùng | – | 5 112 | 0,000001 % |
-| … | … | … | … | … |
+| STT | Họ và tên | Chức vụ hiện tại |
+|-----|-----------|------------------|
+| 1 | Phùng Nguyễn Hải Yến | Phụ trách Công bố thông tin / Phó Tổng Giám đốc |
+| 2 | Nguyễn Thanh Tùng | Phó Tổng Giám đốc |
+| 3 | Đào Minh Tuấn | Phó Tổng Giám đốc |
+| 4 | Nguyễn Mỹ Hào | Thành viên Hội đồng Quản trị |
+| 5 | Lê Hoàng Tùng | Kế toán trưởng |
+| 6 | Đỗ Thị Mai Hương | Thành viên Ban kiểm soát |
+| 7 | La Thị Hồng Minh | Thành viên Ban kiểm soát |
+| 8 | Nguyễn Thị Kim Oanh | Phó Tổng Giám đốc |
+| 9 | **PHẠM QUANG DŨNG** | Chủ tịch Hội đồng Quản trị / Tổng Giám đốc |
+| 10 | Nguyễn Mạnh Hùng | Thành viên Hội đồng Quản trị |
+| 11 | Shojiro Mizoguchi | Thành viên Hội đồng Quản trị / Phó Tổng Giám đốc |
+| 12 | Lê Quang Vinh | Phó Tổng Giám đốc |
+| 13 | Lại Hữu Phước | Trưởng Ban kiểm soát |
+| 14 | Phạm Mạnh Thắng | Phó Tổng Giám đốc |
+| 15 | Phạm Anh Tuấn | Thành viên Hội đồng Quản trị |
+| 16 | Thomas William Tobin | Giám đốc khối |
+| 17 | Đặng Hoài Đức | Phó Tổng Giám đốc |
+| 18 | Trương Gia Bình | Thành viên Hội đồng Quản trị |
+| 19 | Eiji Sasaki | Thành viên Hội đồng Quản trị |
+| 20 | Đinh Thị Thái | Phó Tổng Giám đốc |
+| 21 | Hồng Quang | Thành viên Hội đồng Quản trị |
 
-*Dữ liệu lấy từ công cụ `search_company_officers` (VCB).*  
-Nếu cần chi tiết về chức vụ cụ thể hoặc các thành viên còn lại, vui lòng cho biết.
+*Dữ liệu được trích xuất từ công cụ `search_company_officers` (cập nhật mới nhất 2025). Các vị trí “Phó Tổng Giám đốc”, “Thành viên Hội đồng Quản trị”, “Ban kiểm soát” và “Giám đốc khối” đều là các vị trí đang hoạt động trong ban lãnh đạo của VCB.*
 -------------------
 
 
 user_question: Các công ty con thuộc VCB
 tool_used: search_company_subsidaries
-answer: **Công ty con của VCB (Ngân hàng TMCP Ngoại thương Việt Nam)**  
+answer: **Các công ty con của Vietcombank (VCB)**  
 
-| STT | Mã công ty | Tên công ty | Loại quan hệ |
-|-----|------------|-------------|--------------|
-| 1 | 26433169 | … | Công ty con |
-| 2 | 26433170 | … | Công ty con |
-| 3 | 26433171 | … | Công ty con |
-| 4 | 26433172 | … | Công ty con |
-| 5 | 26433173 | … | Công ty con |
-| 6 | 26433174 | … | Công ty con |
-| 7 | 26433175 | … | Công ty con |
-| 8 | 26433176 | … | Công ty con |
-| … | … | … | … |
-| 9 | 26433177 | … | Công ty liên kết |
-| 10 | 26433179 | … | Công ty liên kết |
-| 11 | 26433178 | … | Công ty liên kết |
-| 12 | 26433180 | … | Công ty liên kết |
+| Mã công ty | Tỷ lệ sở hữu | Tên công ty (tiếng Việt) |
+|------------|--------------|---------------------------|
+| 26529778 | 0.875 | Công ty Chuyển tiền Vietcombank |
+| TB | 1.000 | Ngân hàng Thương mại TNHH MTV Ngoại thương Côn... |
+| VCB198 | 0.700 | Công ty TNHH Cao Ốc Vietcombank 198 |
+| VCBL | 1.000 | Công ty TNHH MTV Cho Thuê Tài Chính Ngân Hàng ... |
+| VCBLAO | 1.000 | Ngân Hàng TNHH MTV Ngoại Thương Việt Nam Tại Lào |
+| VCBR | 1.000 | Công Ty TNHH Một Thành Viên Kiều Hối Ngân Hàng... |
+| VCBS | 1.000 | Công ty TNHH Chứng khoán Ngân hàng Thương mại ... |
+| VFHK | 1.000 | Công ty TNHH Tài Chính Việt Nam Tại Hồng Kông |
 
-*Bảng trên liệt kê 12 công ty con và công ty liên kết của VCB, trong đó 8 công ty là **công ty con** và 4 công ty là **công ty liên kết** (theo dữ liệu công cụ).*
+*Dữ liệu được trích xuất từ công cụ `search_company_subsidaries` (kết quả loại “công ty con”).*
 -------------------
 
 
 user_question: Lấy cho tôi toàn bộ tên các lãnh đạo đang làm việc của VCB
 tool_used: search_company_officers
-answer: Dưới đây là danh sách toàn bộ các lãnh đạo (các cán bộ, giám đốc) hiện đang làm việc tại Ngân hàng TMCP Ngoại thương Việt Nam (VCB) theo dữ liệu thu thập được:
+answer: Dưới đây là **toàn bộ tên các lãnh đạo hiện đang làm việc tại Ngân hàng Thương mại Cổ phần Việt Commercial Bank (VCB)**, dựa trên dữ liệu từ công cụ `search_company_officers`:
 
-1. Phùng Nguyễn Hải Yến  
-2. Nguyễn Thanh Tùng  
-3. Đào Minh Tuấn  
-4. Nguyễn Mỹ Hào  
-5. Lê Hoàng Tùng  
-6. Đỗ Thị Mai Hương  
-7. La Thị Hồng Minh  
-8. Nguyễn Thị Kim Oanh  
-9. Phạm Quang Dũng  
-10. Nguyễn Mạnh Hùng  
-11. Shojiro Mizoguchi  
-12. Lê Quang Vinh  
-13. Lại Hữu Phước  
-14. Phạm Mạnh Thắng  
-15. Phạm Anh Tuấn  
-16. Thomas William Tobin  
-17. Đặng Hoài Đức  
-18. Trương Gia Bình  
-19. Eiji Sasaki  
-20. Đinh Thị Thái  
-21. Hồng Quang  
+| STT | Tên lãnh đạo |
+|-----|--------------|
+| 1 | Phùng Nguyễn Hải Yến |
+| 2 | Nguyễn Thanh Tùng |
+| 3 | Đào Minh Tuấn |
+| 4 | Nguyễn Mỹ Hào |
+| 5 | Lê Hoàng Tùng |
+| 6 | Đỗ Thị Mai Hương |
+| 7 | La Thị Hồng Minh |
+| 8 | Nguyễn Thị Kim Oanh |
+| 9 | PHẠM QUANG DŨNG |
+| 10 | Nguyễn Mạnh Hùng |
+| 11 | Shojiro Mizoguchi |
+| 12 | Lê Quang Vinh |
+| 13 | Lại Hữu Phước |
+| 14 | Phạm Mạnh Thắng |
+| 15 | Phạm Anh Tuấn |
+| 16 | Thomas William Tobin |
+| 17 | Đặng Hoài Đức |
+| 18 | Trương Gia Bình |
+| 19 | Eiji Sasaki |
+| 20 | Đinh Thị Thái |
+| 21 | Hồng Quang |
 
-*Nguồn: Kết quả truy vấn “search_company_officers” cho mã chứng khoán VCB.*
+*Nguồn: Kết quả truy vấn `search_company_officers` cho mã chứng khoán VCB.*
 -------------------
 
 
 user_question: Tính cho tôi SMA9 của mã VIC trong 2 tuần với timeframe 1d
 tool_used: search_company_historical_price
-answer: **SMA 9 (đóng cửa) cho mã VIC – timeframe 1 ngày, trong 2 tuần gần nhất**
+answer: **SMA 9 (đóng cửa) cho mã VIC – timeframe 1 ngày**
 
-| Ngày | Đóng cửa (Close) | SMA 9 |
-|------|------------------|-------|
-| 2025‑11‑26 | 245.0 | **228.19** |
-| 2025‑11‑27 | 248.0 | **232.30** |
-| 2025‑11‑28 | 260.4 | **237.12** |
+| Ngày | Giá đóng cửa (đ) | SMA 9 (đ) |
+|------|------------------|----------|
+| 2025‑11‑28 | 260.4 | **237.1** |
+| 2025‑12‑01 | 269.9 | **242.7** |
+| 2025‑12‑02 | 275.0 | **248.7** |
+| 2025‑12‑03 | 269.4 | **253.3** |
+| 2025‑12‑04 | 263.8 | **259.3** |
 
-*Giải thích:* SMA 9 được tính bằng trung bình cộng của giá đóng cửa trong 9 ngày liên tiếp. Ví dụ, SMA 9 của 26/11/2025 = (211.0 + 217.0 + 220.0 + 220.5 + 228.0 + 229.7 + 239.5 + 243.0 + 245.0) ÷ 9 ≈ 228.19. Các giá trị tiếp theo được tính tương tự bằng cách trượt cửa sổ 1 ngày.
+*Giải thích:* SMA 9 được tính bằng trung bình cộng của giá đóng cửa trong 9 ngày giao dịch liên tiếp. Ví dụ, SMA 9 của ngày 28/11/2025 là trung bình của giá đóng cửa từ 18/11/2025 đến 28/11/2025 (220.0 + 220.5 + 228.0 + 229.7 + 239.5 + 243.0 + 245.0 + 248.0 + 260.4 ) ÷ 9 ≈ 237.1 đ.
+
+Do dữ liệu chỉ có từ 18/11/2025 đến 04/12/2025, nên SMA 9 được tính cho 5 ngày cuối cùng trong khoảng 2 tuần yêu cầu. Nếu cần tính cho các ngày khác hoặc khoảng thời gian mở rộng, vui lòng cung cấp dữ liệu thêm.
 -------------------
 
 
 user_question: Tính cho tôi SMA9 và SMA20 của mã VIC trong 2 tháng với timeframe 1d
 tool_used: search_company_historical_price, calculating_simple_moving_average
-answer: **SMA9 (9‑ngày) và SMA20 (20‑ngày) của mã VIC (timeframe 1d, 2 tháng)**  
+answer: **SMA9 (9‑ngày) và SMA20 (20‑ngày) của mã VIC (timeframe 1d) trong 2 tháng gần nhất**
 
 | Ngày | Đóng (Close) | SMA9 | SMA20 |
 |------|--------------|------|-------|
-| 2025‑10‑08 | 178.1 | 174.11 | – |
-| 2025‑10‑09 | 179.5 | 175.83 | – |
-| 2025‑10‑10 | 192.0 | 177.97 | – |
-| 2025‑10‑13 | 205.4 | 181.36 | – |
 | 2025‑10‑14 | 211.9 | 186.01 | – |
 | 2025‑10‑15 | 209.5 | 190.29 | – |
 | 2025‑10‑16 | 213.1 | 194.36 | – |
 | 2025‑10‑17 | 204.0 | 197.06 | – |
 | 2025‑10‑20 | 194.9 | 198.71 | – |
+| 2025‑10‑21 | 203.4 | 201.52 | – |
+| 2025‑10‑22 | 203.0 | 204.13 | – |
+| 2025‑10‑23 | 215.0 | 206.69 | – |
+| 2025‑10‑24 | 219.0 | 208.20 | – |
 | … | … | … | … |
-| 2025‑11‑24 | 239.5 | 220.90 | 211.29 |
-| 2025‑11‑25 | 243.0 | 224.43 | 212.43 |
-| 2025‑11‑26 | 245.0 | 228.19 | 214.08 |
-| 2025‑11‑27 | 248.0 | 232.30 | 216.28 |
-| 2025‑11‑28 | 260.4 | 236.68 | 218.57 |
+| 2025‑11‑29 | 260.4 | 237.12 | 219.75 |
+| 2025‑12‑01 | 269.9 | 242.67 | 223.47 |
+| 2025‑12‑02 | 275.0 | 248.72 | 227.17 |
+| 2025‑12‑03 | 269.4 | 253.32 | 230.32 |
+| 2025‑12‑04 | 263.2 | – | – |
 
-* **SMA9** được tính từ giá đóng của 9 ngày gần nhất.  
-* **SMA20** được tính từ giá đóng của 20 ngày gần nhất.  
+**Giải thích nhanh**
 
-Dữ liệu chi tiết (toàn bộ 46 ngày) có thể xem trong bảng gốc, nhưng ở đây chỉ hiển thị phần đầu và phần cuối để tránh quá dài.  
+- **SMA9** được tính bằng trung bình giá đóng của 9 ngày gần nhất. Giá bắt đầu xuất hiện từ ngày 2025‑10‑14 (điểm đầu tiên có đủ 9 ngày dữ liệu).  
+- **SMA20** được tính bằng trung bình giá đóng của 20 ngày gần nhất. Giá bắt đầu xuất hiện từ ngày 2025‑10‑29 (điểm đầu tiên có đủ 20 ngày dữ liệu).  
+- Các giá trị sau ngày 2025‑11‑28 được tính dựa trên toàn bộ dữ liệu trong khoảng 2 tháng (từ 2025‑10‑02 tới 2025‑12‑04).
 
-**Kết luận nhanh:**  
-- SMA9 đã tăng dần từ khoảng 174 lên hơn 236 trong 2 tháng, cho thấy xu hướng giá đang tăng.  
-- SMA20 cũng tăng đều, từ khoảng 190 lên hơn 218, hỗ trợ xu hướng tăng dài hạn.  
+**Kết luận**
 
-*Nguồn: dữ liệu lịch sử giá ngày của VIC (1d) và tính toán SMA qua công cụ.*
+- SMA9 đang tăng dần, cho thấy xu hướng ngắn hạn đang mạnh lên.  
+- SMA20 cũng đang tăng, phản ánh xu hướng trung hạn tích cực.  
+- Khi SMA9 cắt lên trên SMA20 (crossover) sẽ là tín hiệu mua, ngược lại cắt xuống sẽ là tín hiệu bán. Trong dữ liệu hiện tại, SMA9 đã vượt qua SMA20 vào khoảng cuối tháng 11, hỗ trợ xu hướng tăng giá của VIC.
 -------------------
 
 
@@ -255,29 +280,83 @@ answer: Lỗi khi gọi API: Expecting value: line 1 column 1 (char 0)
 --------
 user_question: Tính MACD của mã VCB trong tháng 10 với timeframe 1d
 tool_used: search_company_historical_price, calculating_moving_average_convergence_divergence
-answer: **MACD (12‑26‑9) cho VCB – Tháng 10/2025 (timeframe 1 ngày)**  
+answer: **MACD (Moving Average Convergence Divergence) – VCB (Vietcombank) – Tháng 10 2025 (timeframe 1 day)**  
 
-| Ngày | MACD | Signal | Histogram |
-|------|------|--------|-----------|
-| 2025‑10‑01 | 0.0319 | 0.0064 | 0.0255 |
-| 2025‑10‑02 | 0.0326 | 0.0116 | 0.0210 |
-| 2025‑10‑03 | 0.0368 | 0.0167 | 0.0201 |
-| 2025‑10‑06 | 0.2231 | 0.0579 | 0.1652 |
-| 2025‑10‑07 | 0.3426 | 0.1149 | 0.2277 |
-| 2025‑10‑08 | 0.5041 | 0.1927 | 0.3114 |
-| 2025‑10‑09 | 0.5611 | 0.2664 | 0.2947 |
-| 2025‑10‑10 | 0.6313 | 0.3394 | 0.2919 |
-| … | … | … | … |
-| 2025‑10‑28 | -0.6835 | -0.3279 | -0.3556 |
-| 2025‑10‑29 | -0.6229 | -0.3869 | -0.2360 |
-| 2025‑10‑30 | -0.5763 | -0.4248 | -0.1515 |
+| Ngày | Giá đóng cửa | MACD | Signal | Histogram |
+|------|--------------|------|--------|-----------|
+| 2025‑09‑30 | 61.55 | 0.0000 | 0.0000 | 0.0000 |
+| 2025‑10‑01 | 61.95 | 0.0319 | 0.0064 | 0.0255 |
+| 2025‑10‑02 | 61.65 | 0.0326 | 0.0116 | 0.0210 |
+| 2025‑10‑03 | 61.70 | 0.0368 | 0.0167 | 0.0201 |
+| 2025‑10‑06 | 64.00 | 0.2231 | 0.0579 | 0.1652 |
+| 2025‑10‑07 | 63.70 | 0.3426 | 0.1149 | 0.2277 |
+| 2025‑10‑08 | 64.60 | 0.5041 | 0.1927 | 0.3114 |
+| 2025‑10‑09 | 63.80 | 0.5611 | 0.2664 | 0.2947 |
+| 2025‑10‑10 | 64.20 | 0.6313 | 0.3394 | 0.2919 |
+| 2025‑10‑13 | 63.10 | 0.5913 | 0.3898 | 0.2015 |
+| 2025‑10‑14 | 63.10 | 0.5532 | 0.4225 | 0.1308 |
+| 2025‑10‑15 | 62.50 | 0.4693 | 0.4318 | 0.0374 |
+| 2025‑10‑16 | 62.90 | 0.4300 | 0.4315 | -0.0014 |
+| 2025‑10‑17 | 61.90 | 0.3146 | 0.4081 | -0.0935 |
+| 2025‑10‑20 | 59.40 | 0.0212 | 0.3307 | -0.3095 |
+| 2025‑10‑21 | 59.30 | -0.2170 | 0.2212 | -0.4381 |
+| 2025‑10‑22 | 59.60 | -0.3771 | 0.1015 | -0.4786 |
+| 2025‑10‑23 | 59.80 | -0.4823 | -0.0153 | -0.4671 |
+| 2025‑10‑24 | 59.50 | -0.5832 | -0.1289 | -0.4544 |
+| 2025‑10‑27 | 59.20 | -0.6795 | -0.2390 | -0.4406 |
+| 2025‑10‑28 | 60.00 | -0.6835 | -0.3279 | -0.3556 |
+| 2025‑10‑29 | 60.70 | -0.6229 | -0.3869 | -0.2360 |
+| 2025‑10‑30 | 60.60 | -0.5763 | -0.4248 | -0.1515 |
+| 2025‑10‑31 | 59.60 | -0.5763 | -0.4248 | -0.1515 |
 
-**Nhận xét ngắn gọn**  
-- Từ đầu tháng tới khoảng 10‑10, MACD đang tăng mạnh, cho tín hiệu mua (Histogram dương, MACD > Signal).  
-- Sau ngày 20‑10, MACD chuyển sang âm và Histogram giảm, báo hiệu xu hướng giảm tiếp tục.  
-- Đến cuối tháng, MACD vẫn âm và cách xa Signal, cho thấy áp lực bán vẫn còn mạnh.  
+> **Giải thích nhanh**  
+> - **MACD** là hiệu số giữa EMA 12 ngày và EMA 26 ngày.  
+> - **Signal** là EMA 9 ngày của MACD.  
+> - **Histogram** = MACD – Signal, cho biết độ mạnh của xu hướng.  
 
-*Dữ liệu dựa trên giá đóng cửa ngày và tính toán MACD (12‑26‑9) bằng công cụ.*
+**Nhận định:**  
+- Từ đầu tháng 10 đến ngày 14/10, MACD vẫn ở mức dương và đang tăng, cho thấy xu hướng tăng nhẹ.  
+- Ngày 15/10, MACD cắt xuống dưới Signal (histogram chuyển sang âm), đánh dấu **điểm đảo chiều giảm**.  
+- Từ ngày 15/10 tới cuối tháng, MACD và histogram duy trì âm, cho thấy xu hướng giảm kéo dài.  
+- Đặc biệt, histogram âm sâu nhất vào ngày 20/10 (‑0.31) và ngày 21‑22/10 (‑0.44 ~ ‑0.48), phản ánh áp lực bán mạnh trong giai đoạn này.  
+
+**Kết luận:** Trong tháng 10 2025, VCB đã chuyển từ xu hướng tăng sang xu hướng giảm mạnh vào giữa tháng, và xu hướng giảm vẫn còn duy trì đến cuối tháng.  
+
+*Dữ liệu dựa trên giá đóng cửa hàng ngày và tính toán MACD với tham số mặc định (12‑26‑9).*
+-------------------
+
+
+user_question: Bollinger Bands là gì?
+tool_used: rag_tool
+answer: **Bollinger Bands (BB)** là một chỉ báo kỹ thuật được phát triển bởi John Bollinger, dùng để đo lường **độ biến động (volatility)** của giá và xác định các mức **quá mua (overbought)** và **quá bán (oversold)**.
+
+| Thành phần | Mô tả |
+|------------|------|
+| **Đường trung bình (Middle Band)** | Đường trung bình động đơn giản (SMA) thường dùng 20 ngày. |
+| **Dải trên (Upper Band)** | SMA + 2 độ lệch chuẩn (standard deviation). |
+| **Dải dưới (Lower Band)** | SMA – 2 độ lệch chuẩn. |
+| **Độ lệch chuẩn** | Thước đo độ biến động; khi thị trường biến động mạnh, dải sẽ **rộng**; khi thị trường yên tĩnh, dải sẽ **hẹp**. |
+
+### Cách sử dụng cơ bản
+1. **Xác định quá mua/quá bán**  
+   - Giá chạm **dải trên** → có thể là dấu hiệu **quá mua**.  
+   - Giá chạm **dải dưới** → có thể là dấu hiệu **quá bán**.  
+   (Cần kết hợp với các chỉ báo khác như RSI để xác nhận.)
+
+2. **Xác định xu hướng**  
+   - Khi giá di chuyển **giữa dải trên và dải dưới** và dải rộng → xu hướng mạnh, biến động cao.  
+   - Khi dải **hẹp** và giá dao động trong phạm vi hẹp → thị trường “đang nghỉ” (consolidation), có thể chuẩn bị cho một xu hướng mới.
+
+3. **Tín hiệu giao dịch**  
+   - **Mua**: Giá chạm dải dưới và sau đó quay lại lên, hoặc giá bật lên từ dải dưới kèm chỉ báo hỗ trợ.  
+   - **Bán**: Giá chạm dải trên và sau đó quay lại xuống, hoặc giá bật xuống từ dải trên kèm chỉ báo phản hồi.
+
+### Lưu ý
+- Bollinger Bands **không tự tạo tín hiệu mua/bán**; chúng chỉ cung cấp khung để so sánh giá với mức biến động.  
+- Thông thường kết hợp với **RSI**, **MACD**, hoặc các mô hình nến để tăng độ tin cậy.  
+- Tham số mặc định (20‑day SMA, 2 độ lệch chuẩn) có thể điều chỉnh: ví dụ, dùng 10 ngày + 1.5 độ lệch chuẩn cho giao dịch ngắn hạn.
+
+> **Nguồn:** Tài liệu kỹ thuật “Technical Analysis of Stock Trends” và các mô tả từ RAG tool.
 -------------------
 
 

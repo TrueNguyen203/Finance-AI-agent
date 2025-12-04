@@ -16,6 +16,8 @@ from ..tools.math_tools import (
     calculating_moving_average_convergence_divergence
 )
 
+from ..tools.rag_tools import rag_tool
+
 def setup_agent():
     # --- Listing tools ---
     tools = [
@@ -26,7 +28,8 @@ def setup_agent():
         search_company_historical_price,
         calculating_simple_moving_average,
         calculating_relative_strength_index,
-        calculating_moving_average_convergence_divergence
+        calculating_moving_average_convergence_divergence,
+        rag_tool,
     ]
 
     # --- Setup Agent ---
@@ -45,8 +48,8 @@ def setup_agent():
             Hãy sử dụng tool để tìm thông tin và trả lời người dùng ngắn gọn dựa theo 1 phần hoặc toàn bộ kết quả trả về từ tool.
             Không lặp lại hay lịch sử hội thoại.
             Hãy luôn trả lời bằng Tiếng Việt.
-            Giải thích thật ngắn gọn kèm theo dẫn chứng, sử dụng ma trận thông tin nếu cần.
-            Nếu ma trận quá dài (dài hơn 30x dòng) hãy chỉ đưa ra phần đầu và phần cuối của ma trận.
+            Giải thích kèm theo dẫn chứng, sử dụng ma trận thông tin nếu cần.
+            Nếu ma trận quá dài (dài hơn 50 dòng) hãy chỉ đưa ra phần đầu và phần cuối của ma trận.
             Nếu không có thông tin, hãy trả lời 'Không tìm thấy thông tin'.
         """,
     )
