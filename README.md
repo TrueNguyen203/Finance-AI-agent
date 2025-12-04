@@ -2,6 +2,7 @@
 
 ## Table of Contents
 - [Description](#description)
+- [Workflow](#workflow)
 - [Tech](#tech)
 - [How to run the code](#how-to-run-the-code)
 - [Author](#author)
